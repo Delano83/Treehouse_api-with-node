@@ -1,0 +1,15 @@
+extends layout
+
+block append styles
+  link(rel="stylesheet", href="css/bootstrap.min.css")
+
+block content
+  body(style="background:#1da1f2")
+    .container
+      .row
+        .col-sm-6.col-sm-offset-3.text-center(style="color:white")
+          h1 #{message}
+          h3(style="opacity:.6") #{error}
+
+          a(href="/")
+            p Return to Twitter feed
